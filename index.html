@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vu Hai Dang — AI Engineer &amp; Researcher</title>
+
+  <meta
+    name="description"
+    content="Vu Hai Dang (StevenMup2004) is an AI engineer and researcher at Hanoi University of Science and Technology, working on LLM security, secure code generation, and retrieval-augmented systems for software engineering."
+  />
+  <meta name="author" content="Vu Hai Dang" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0F5F58" />
+  <link rel="canonical" href="https://stevenmup2004.github.io/" />
+
+  <meta property="og:title" content="Vu Hai Dang — AI Engineer &amp; Researcher" />
+  <meta
+    property="og:description"
+    content="Research on LLM security, secure code generation, and retrieval-augmented systems for software engineering."
+  />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://stevenmup2004.github.io/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F5F58'/%3E%3Crect x='8' y='10' width='16' height='2.6' rx='1.3' fill='%23fff'/%3E%3Crect x='8' y='15' width='16' height='2.6' rx='1.3' fill='%23fff' opacity='.68'/%3E%3Crect x='8' y='20' width='9' height='2.6' rx='1.3' fill='%23fff' opacity='.44'/%3E%3C/svg%3E"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vu Hai Dang",
+    "alternateName": "StevenMup2004",
+    "url": "https://stevenmup2004.github.io/",
+    "jobTitle": "AI Engineer and Researcher",
+    "description": "AI engineer and researcher working on LLM security, secure code generation, and retrieval-augmented systems for software engineering.",
+    "sameAs": [
+      "https://github.com/StevenMup2004",
+      "https://scholar.google.com/citations?user=yX8rzu0AAAAJ",
+      "https://orcid.org/0009-0001-7558-1853",
+      "https://www.linkedin.com/in/haidang07092004/",
+      "https://huggingface.co/StevenMup2004",
+      "https://www.facebook.com/vu.hai.ang.95612"
+    ],
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0009-0001-7558-1853"
+    },
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Hanoi University of Science and Technology"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Hanoi, Vietnam"
+    },
+    "knowsAbout": [
+      "LLM Security",
+      "Secure Code Generation",
+      "AI for Software Engineering",
+      "Retrieval-Augmented Generation",
+      "AI Agents",
+      "Natural Language Processing"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --paper: #f4f6f5;
+      --well: #ffffff;
+      --ink: #14181a;
+      --ink-mid: #4a5457;
+      --ink-soft: #5a6669;
+      --rule: #d8dedc;
+      --rule-soft: #e6eae9;
+      --signal: #0f5f58;
+      --signal-tint: #e4efec;
+      --on-signal: #ffffff;
+
+      --serif: "Spectral", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+      --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+      --wrap: 1000px;
+      --rail: 172px;
+      --gutter: 44px;
+      --head: 62px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #101312;
+        --well: #171b1a;
+        --ink: #e7ebe9;
+        --ink-mid: #a9b3b0;
+        --ink-soft: #8b9591;
+        --rule: #272d2b;
+        --rule-soft: #1e2322;
+        --signal: #64c3b3;
+        --signal-tint: #12211f;
+        --on-signal: #0b1211;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, p, dd, dl, ul, ol {
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--signal);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .wrap {
+      width: min(var(--wrap), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip:focus {
+      left: 16px;
+      top: 12px;
+      z-index: 50;
+      padding: 10px 14px;
+      background: var(--signal);
+      color: var(--on-signal);
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    /* ---------- Header ---------- */
+
+    .site-head {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--paper);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .head-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: var(--head);
+    }
+
+    .wordmark {
+      font-family: var(--serif);
+      font-size: 1.02rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      gap: 22px;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .site-nav::-webkit-scrollbar { display: none; }
+
+    .site-nav a {
+      font-size: 0.86rem;
+      color: var(--ink-mid);
+      white-space: nowrap;
+      transition: color 0.18s ease;
+    }
+
+    .site-nav a:hover { color: var(--signal); }
+
+    /* ---------- Intro ---------- */
+
+    .intro {
+      padding: 66px 0 54px;
+    }
+
+    .kicker {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--signal);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.7rem, 7.5vw, 4.4rem);
+      line-height: 1.02;
+      letter-spacing: -0.022em;
+      margin-bottom: 22px;
+    }
+
+    .lead {
+      font-family: var(--serif);
+      font-size: 1.13rem;
+      line-height: 1.62;
+      max-width: 40rem;
+    }
+
+    .lead + .lead {
+      margin-top: 14px;
+      color: var(--ink-mid);
+    }
+
+    .facts {
+      margin: 32px 0;
+      max-width: 40rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .fact {
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: 4px 20px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .fact dt {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      line-height: 1.9;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--well);
+      color: var(--ink);
+      font-size: 0.93rem;
+      font-weight: 500;
+      transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+    }
+
+    .btn:hover {
+      border-color: var(--signal);
+      color: var(--signal);
+    }
+
+    .btn-primary {
+      background: var(--signal);
+      border-color: var(--signal);
+      color: var(--on-signal);
+    }
+
+    .btn-primary:hover {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--paper);
+    }
+
+    /* ---------- Sections on the label rail ---------- */
+
+    .row {
+      display: grid;
+      grid-template-columns: var(--rail) minmax(0, 1fr);
+      gap: 0 var(--gutter);
+      padding: 38px 0 46px;
+      border-top: 1px solid var(--rule);
+      scroll-margin-top: calc(var(--head) + 16px);
+    }
+
+    .rail {
+      align-self: start;
+      position: sticky;
+      top: calc(var(--head) + 30px);
+    }
+
+    .rail-label {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--signal);
+    }
+
+    .col { min-width: 0; }
+
+    /* ---------- Research ---------- */
+
+    .entry {
+      padding: 18px 0;
+      border-top: 1px solid var(--rule-soft);
+    }
+
+    .entry:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .entry h3 {
+      font-family: var(--serif);
+      font-size: 1.24rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .entry p {
+      color: var(--ink-mid);
+      max-width: 58ch;
+    }
+
+    /* ---------- Publications ---------- */
+
+    .pubs {
+      list-style: none;
+      padding: 0;
+    }
+
+    .pubs > li {
+      padding: 22px 0;
+      border-top: 1px solid var(--rule-soft);
+    }
+
+    .pubs > li:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .pub-title {
+      font-family: var(--serif);
+      font-size: 1.24rem;
+      font-weight: 500;
+      line-height: 1.34;
+      max-width: 48ch;
+      margin-bottom: 10px;
+    }
+
+    .venue {
+      font-family: var(--mono);
+      font-size: 0.76rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+    }
+
+    .pub-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      font-size: 0.92rem;
+    }
+
+    .pub-links a {
+      color: var(--signal);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--rule);
+      transition: text-decoration-color 0.18s ease;
+    }
+
+    .pub-links a:hover { text-decoration-color: var(--signal); }
+
+    /* ---------- Profiles ---------- */
+
+    .profiles {
+      list-style: none;
+      padding: 0;
+    }
+
+    .profiles a {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+      padding: 15px 0;
+      border-top: 1px solid var(--rule-soft);
+      transition: color 0.18s ease;
+    }
+
+    .profiles li:first-child a {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .pf-name {
+      font-weight: 500;
+      font-size: 1.02rem;
+    }
+
+    .pf-id {
+      flex: 1 1 auto;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+      word-break: break-word;
+    }
+
+    .pf-go {
+      color: var(--signal);
+      font-size: 0.9rem;
+      transition: transform 0.18s ease;
+    }
+
+    .profiles a:hover .pf-name { color: var(--signal); }
+    .profiles a:hover .pf-go { transform: translate(2px, -2px); }
+
+    /* ---------- Footer ---------- */
+
+    .site-foot {
+      border-top: 1px solid var(--rule);
+      padding: 26px 0 56px;
+      color: var(--ink-soft);
+      font-size: 0.86rem;
+    }
+
+    .foot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px 24px;
+    }
+
+    .site-foot a {
+      color: var(--ink-soft);
+      text-decoration: underline;
+      text-decoration-color: var(--rule);
+      text-underline-offset: 3px;
+    }
+
+    .site-foot a:hover { color: var(--signal); }
+
+    /* ---------- Motion ---------- */
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    .intro > * {
+      animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+    }
+
+    .intro > *:nth-child(1) { animation-delay: 0.02s; }
+    .intro > *:nth-child(2) { animation-delay: 0.08s; }
+    .intro > *:nth-child(3) { animation-delay: 0.14s; }
+    .intro > *:nth-child(4) { animation-delay: 0.20s; }
+    .intro > *:nth-child(5) { animation-delay: 0.26s; }
+    .intro > *:nth-child(6) { animation-delay: 0.32s; }
+
+    /* ---------- Responsive ---------- */
+
+    @media (max-width: 860px) {
+      .row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 30px 0 38px;
+      }
+
+      .rail {
+        position: static;
+      }
+
+      .intro { padding: 48px 0 40px; }
+    }
+
+    @media (max-width: 600px) {
+      .wrap { width: calc(100% - 40px); }
+      .site-nav { gap: 14px; }
+      .site-nav a { font-size: 0.8rem; }
+      .fact { grid-template-columns: 1fr; gap: 2px; }
+      .actions .btn { flex: 1 1 auto; justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .intro > * { animation: none; }
+      * { transition-duration: 0.01ms !important; }
+    }
+
+    /* ---------- Print ---------- */
+
+    @media print {
+      .site-head, .actions, .pf-go { display: none; }
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .row { break-inside: avoid; }
+      .pub-links a[href^="http"]::after,
+      .profiles a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        color: #444;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="wordmark" href="#top">Vu Hai Dang</a>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#profiles">Profiles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro wrap" id="top">
+      <p class="kicker">AI Engineer &amp; Researcher</p>
+      <h1>Vu Hai Dang</h1>
+
+      <p class="lead">
+        I work on the security of large language models applied to software: secure code
+        generation, keeping code models aligned with APIs as they change, and defending
+        retrieval-augmented systems against poisoning.
+      </p>
+      <p class="lead">
+        My interest is in results that survive contact with real systems — robustness, safe
+        deployment, and knowledge that stays correct as the software around it moves.
+      </p>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>Affiliation</dt>
+          <dd>Hanoi University of Science and Technology</dd>
+        </div>
+        <div class="fact">
+          <dt>Based in</dt>
+          <dd>Hanoi, Vietnam · UTC+07:00</dd>
+        </div>
+      </dl>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=yX8rzu0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://github.com/StevenMup2004" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section class="row wrap" id="research" aria-labelledby="research-label">
+      <div class="rail">
+        <h2 class="rail-label" id="research-label">Research</h2>
+      </div>
+      <div class="col">
+        <article class="entry">
+          <h3>LLM security</h3>
+          <p>How large language models fail under adversarial pressure, and what makes their behavior dependable enough to deploy.</p>
+        </article>
+
+        <article class="entry">
+          <h3>Secure code generation</h3>
+          <p>Getting models to produce code that is correct and safe, not merely plausible.</p>
+        </article>
+
+        <article class="entry">
+          <h3>AI for software engineering</h3>
+          <p>Where models genuinely help with maintenance, migration, and reasoning about code that already exists.</p>
+        </article>
+
+        <article class="entry">
+          <h3>Retrieval and agents</h3>
+          <p>Grounding, retrieval quality, and guardrails for systems that act rather than only answer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="row wrap" id="publications" aria-labelledby="publications-label">
+      <div class="rail">
+        <h2 class="rail-label" id="publications-label">Selected publications</h2>
+      </div>
+      <div class="col">
+        <ol class="pubs">
+          <!-- Thêm danh sách tác giả vào <p class="authors"> nếu muốn: chuẩn học thuật là Authors → Title → Venue → Year -->
+          <li>
+            <h3 class="pub-title">Towards Knowledge Alignment in Code LLMs: Contrastive Unlearning for Evolving APIs</h3>
+            <p class="venue">ICSME 2026 · NIER Track</p>
+            <p class="pub-links">
+              <a href="https://conf.researchr.org/details/icsme-2026/icsme-2026-nier/23/Towards-Knowledge-Alignment-in-Code-LLMs-Contrastive-Unlearning-for-Evolving-APIs" target="_blank" rel="noopener">Conference page</a>
+              <a href="https://arxiv.org/pdf/2606.30810" target="_blank" rel="noopener">Preprint (PDF)</a>
+            </p>
+          </li>
+
+          <li>
+            <h3 class="pub-title">Walking on Thin Ice? Defending RAG-based Code Recommender Systems Against Poisoning Attacks</h3>
+            <p class="venue">Journal of Systems and Software · 2026</p>
+            <p class="pub-links">
+              <a href="https://www.sciencedirect.com/science/article/pii/S0164121226002979" target="_blank" rel="noopener">ScienceDirect</a>
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="row wrap" id="profiles" aria-labelledby="profiles-label">
+      <div class="rail">
+        <h2 class="rail-label" id="profiles-label">Profiles</h2>
+      </div>
+      <div class="col">
+        <ul class="profiles">
+          <li>
+            <a href="https://github.com/StevenMup2004" target="_blank" rel="noopener">
+              <span class="pf-name">GitHub</span>
+              <span class="pf-id">StevenMup2004</span>
+              <span class="pf-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=yX8rzu0AAAAJ" target="_blank" rel="noopener">
+              <span class="pf-name">Google Scholar</span>
+              <span class="pf-id">yX8rzu0AAAAJ</span>
+              <span class="pf-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://orcid.org/0009-0001-7558-1853" target="_blank" rel="noopener">
+              <span class="pf-name">ORCID</span>
+              <span class="pf-id">0009-0001-7558-1853</span>
+              <span class="pf-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://huggingface.co/StevenMup2004" target="_blank" rel="noopener">
+              <span class="pf-name">Hugging Face</span>
+              <span class="pf-id">StevenMup2004</span>
+              <span class="pf-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/haidang07092004/" target="_blank" rel="noopener">
+              <span class="pf-name">LinkedIn</span>
+              <span class="pf-id">in/haidang07092004</span>
+              <span class="pf-go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-inner">
+      <p>© 2026 Vu Hai Dang</p>
+      <p>
+        Also on
+        <a href="https://www.facebook.com/vu.hai.ang.95612" target="_blank" rel="noopener">Facebook</a>
+        · Updated August 2026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
