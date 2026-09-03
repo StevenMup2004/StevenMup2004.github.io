@@ -7,7 +7,7 @@
 
   <meta
     name="description"
-    content="Vu Hai Dang (StevenMup2004) is an AI engineer and researcher at Hanoi University of Science and Technology, working on LLM security, secure code generation, and retrieval-augmented systems for software engineering."
+    content="Vu Hai Dang (StevenMup2004) is an AI engineer and researcher at Hanoi University of Science and Technology. His work sits at the intersection of software engineering, artificial intelligence and cybersecurity: LLM4Code, secure code generation, LLM security and retrieval-augmented systems."
   />
   <meta name="author" content="Vu Hai Dang" />
   <meta name="robots" content="index, follow" />
@@ -69,9 +69,12 @@
       "name": "Hanoi, Vietnam"
     },
     "knowsAbout": [
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "LLM4Code",
       "LLM Security",
       "Secure Code Generation",
-      "AI for Software Engineering",
       "Retrieval-Augmented Generation",
       "AI Agents",
       "Natural Language Processing"
@@ -532,26 +535,39 @@
     .ic-blink { animation: ic-blink 2.9s ease-in-out infinite; }
 
     .fx--chip {
-      display: inline-block;
-      padding: 5px 11px;
-      border: 1px solid rgba(var(--primary-rgb), .24);
-      border-radius: 8px;
-      background: color-mix(in srgb, var(--card-solid) 52%, transparent);
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
-      font-family: var(--mono);
-      font-size: 12px;
-      letter-spacing: .03em;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 12px 5px 8px;
+      border: 1px solid rgba(var(--primary-rgb), .26);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--card-solid) 62%, transparent);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 1px 4px rgba(var(--primary-rgb), .10);
       white-space: nowrap;
+      opacity: .72;
+    }
+    .fx--chip svg {
+      width: 14px;
+      height: 14px;
+      flex: none;
+      color: var(--accent);
+    }
+    .fx--chip b {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: .03em;
       color: var(--primary);
-      opacity: .62;
     }
     .fx--ic { color: var(--accent); opacity: .34; }
     .fx--ic svg { width: var(--s, 27px); height: var(--s, 27px); display: block; }
 
     @media (max-width: 980px) {
       .fx--sm-hide { display: none; }
-      .fx--chip { font-size: 11px; padding: 4px 9px; }
+      .fx--chip b { font-size: 10.5px; }
+      .fx--chip { padding: 4px 10px 4px 7px; gap: 6px; }
     }
 
     @keyframes float-rotate {
@@ -1004,6 +1020,10 @@
       color: var(--text-2);
     }
     .contact-panel .cta-row { justify-content: center; }
+    .contact-panel .btn--primary { font-family: var(--mono); font-size: 14px; letter-spacing: .01em; }
+    @media (max-width: 460px) {
+      .contact-panel .btn--primary { font-size: 12.5px; padding-inline: 16px; }
+    }
     .contact-panel__addr {
       margin: 22px 0 0;
       font-family: var(--mono);
@@ -1130,15 +1150,15 @@
         <span class="fx fx--ic fx--sway fx--sm-hide" style="--x:85%;--y:10%;--t:20s;--d:-12s;--s:24px;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 7.5v9M8.5 5H13a3 3 0 0 1 3 3v1.5"/></svg></span>
         <span class="fx fx--ic fx--sm-hide" style="--x:46%;--y:95%;--t:19s;--d:-7s;--s:22px;" aria-hidden="true"><svg class="ic-blink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span>
         <span class="fx fx--ic fx--sm-hide" style="--x:52%;--y:4%;--t:21s;--d:-10s;--s:25px;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1"/><path d="M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></svg></span>
-        <span class="fx fx--chip fx--sm-hide" style="--x:15%;--y:12%;--t:20s;--d:-1s;" aria-hidden="true">CWE-89</span>
-        <span class="fx fx--chip" style="--x:80%;--y:46%;--t:24s;--d:-7s;" aria-hidden="true">CWE-79</span>
-        <span class="fx fx--chip fx--sway fx--sm-hide" style="--x:88%;--y:92%;--t:21s;--d:-16s;" aria-hidden="true">CWE-502</span>
-        <span class="fx fx--chip" style="--x:2%;--y:62%;--t:18s;--d:-4s;" aria-hidden="true">RAG</span>
-        <span class="fx fx--chip fx--sm-hide" style="--x:87%;--y:58%;--t:22s;--d:-10s;" aria-hidden="true">poisoning</span>
-        <span class="fx fx--chip fx--sm-hide" style="--x:9%;--y:35%;--t:26s;--d:-13s;" aria-hidden="true">unlearning</span>
-        <span class="fx fx--chip fx--sm-hide" style="--x:81%;--y:76%;--t:19s;--d:-6s;" aria-hidden="true">secure_code()</span>
-        <span class="fx fx--chip fx--sway fx--sm-hide" style="--x:34%;--y:76%;--t:23s;--d:-18s;" aria-hidden="true">top-k</span>
-        <span class="fx fx--chip fx--sm-hide" style="--x:40%;--y:14%;--t:25s;--d:-9s;" aria-hidden="true">embeddings</span>
+        <span class="fx fx--chip fx--sm-hide" style="--x:15%;--y:12%;--t:20s;--d:-1s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8.5v4M12 16h.01"/></svg><b>CWE-89</b></span>
+        <span class="fx fx--chip" style="--x:80%;--y:46%;--t:24s;--d:-7s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8.5v4M12 16h.01"/></svg><b>CWE-79</b></span>
+        <span class="fx fx--chip fx--sway fx--sm-hide" style="--x:88%;--y:92%;--t:21s;--d:-16s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8.5v4M12 16h.01"/></svg><b>CWE-502</b></span>
+        <span class="fx fx--chip" style="--x:2%;--y:62%;--t:18s;--d:-4s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><b>RAG</b></span>
+        <span class="fx fx--chip fx--sm-hide" style="--x:87%;--y:58%;--t:22s;--d:-10s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><b>poisoning</b></span>
+        <span class="fx fx--chip fx--sm-hide" style="--x:9%;--y:35%;--t:26s;--d:-13s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg><b>unlearning</b></span>
+        <span class="fx fx--chip fx--sm-hide" style="--x:81%;--y:76%;--t:19s;--d:-6s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7a3 3 0 0 1 3-3h5"/><path d="m9 1 3 3-3 3"/><path d="M20 7v10a3 3 0 0 1-3 3h-5"/><path d="m15 23-3-3 3-3"/></svg><b>API drift</b></span>
+        <span class="fx fx--chip fx--sway fx--sm-hide" style="--x:34%;--y:76%;--t:23s;--d:-18s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6.5 21V11M12 21V4M17.5 21v-6"/></svg><b>top-k</b></span>
+        <span class="fx fx--chip fx--sm-hide" style="--x:40%;--y:14%;--t:25s;--d:-9s;" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="1.9"/><circle cx="11" cy="9.5" r="1.9"/><circle cx="17" cy="13.5" r="1.9"/><circle cx="19" cy="5.5" r="1.9"/></svg><b>embeddings</b></span>
       </div>
 
       <span class="blob blob--1" aria-hidden="true"></span>
@@ -1156,9 +1176,8 @@
         <p class="hero__role">AI Engineer <span class="sep">&amp;</span> Researcher</p>
 
         <p class="hero__text">
-          I work on the security of large language models applied to software: secure code
-          generation, keeping code models aligned with APIs as they change, and defending
-          retrieval-augmented systems against poisoning.
+          Studying where large language models become unsafe once they touch real code — and what
+          it takes to make them dependable enough to ship.
         </p>
 
         <div class="hero__meta">
@@ -1201,13 +1220,17 @@
         <div class="about">
           <div class="about__body reveal">
             <p>
-              I work on the security of large language models applied to software: secure code
-              generation, keeping code models aligned with APIs as they change, and defending
-              retrieval-augmented systems against poisoning.
+              My research lies at the intersection of <strong>software engineering</strong>,
+              <strong>artificial intelligence</strong> and <strong>cybersecurity</strong>. I work on
+              LLM4Code — large language models applied to code — focusing on secure code generation,
+              keeping code models aligned with APIs as they evolve, and defending retrieval-augmented
+              systems against poisoning.
             </p>
             <p>
-              My interest is in results that survive contact with real systems — robustness, safe
-              deployment, and knowledge that stays correct as the software around it moves.
+              Natural language processing underpins all of it: these systems read specifications,
+              issues and documentation long before they emit a line of code. What ties the threads
+              together is an interest in results that survive contact with real systems — robustness,
+              safe deployment, and knowledge that stays correct as the software around it moves.
             </p>
           </div>
 
@@ -1224,11 +1247,47 @@
               <span class="fact__k">ORCID</span>
               <span class="fact__v"><a href="https://orcid.org/0009-0001-7558-1853" rel="me noopener" target="_blank">0009-0001-7558-1853</a></span>
             </div>
-            <div class="fact">
-              <span class="fact__k">Focus</span>
-              <span class="fact__v">LLM security · Secure code generation · RAG &amp; agents</span>
-            </div>
           </aside>
+        </div>
+
+        <div class="topics reveal">
+          <p class="topics__label">Fields</p>
+          <span class="topic">
+            <span class="topic__ic" style="--ia:ic-throb;--idur:3.4s;--pd:0.0s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6"/></svg>
+            </span>
+            Software Engineering
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--ia:ic-bob;--idur:3.8s;--pd:0.5s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2.2"/><path d="M10 2v3M14 2v3M10 19v3M14 19v3M2 10h3M2 14h3M19 10h3M19 14h3"/></svg>
+            </span>
+            Artificial Intelligence
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--ia:ic-widen;--idur:3.0s;--pd:0.9s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            Cybersecurity
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--ia:ic-wobble;--idur:4.0s;--pd:1.4s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 16-4-4 4-4"/><path d="m15 8 4 4-4 4"/><path d="M13.4 5.4 10.6 18.6"/></svg>
+            </span>
+            LLM4Code
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--ia:ic-blink;--idur:2.9s;--pd:1.8s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/><path d="M8 11h8M8 15h5"/></svg>
+            </span>
+            Natural Language Processing
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--ia:ic-stack;--idur:3.2s;--pd:2.2s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </span>
+            Retrieval &amp; Agents
+          </span>
         </div>
       </div>
     </section>
@@ -1240,8 +1299,7 @@
           <span class="eyebrow">Research</span>
           <h2 class="section__title">What I work on</h2>
           <p class="section__lead">
-            Four threads that keep pointing at the same question: when can you actually trust a model
-            with code?
+            Four threads, one recurring question: when can you actually trust a model with code?
           </p>
         </div>
 
@@ -1259,7 +1317,7 @@
 
           <article class="card reveal">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10.5" width="18" height="10.5" rx="2.2"/><path d="M7.5 10.5V7a4.5 4.5 0 0 1 9 0v3.5"/><path d="m10.2 14.4-1.7 1.7 1.7 1.7"/><path d="m13.8 14.4 1.7 1.7-1.7 1.7"/></svg>
             </div>
             <h3 class="card__title">Secure code generation</h3>
             <p class="card__text">
@@ -1288,46 +1346,6 @@
               answer.
             </p>
           </article>
-        </div>
-
-        <div class="topics reveal">
-          <p class="topics__label">Topics</p>
-          <span class="topic">
-            <span class="topic__ic" style="--ia:ic-throb;--idur:3.4s;--pd:0.0s;" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </span>
-            LLM Security
-          </span>
-          <span class="topic">
-            <span class="topic__ic" style="--ia:ic-widen;--idur:3.0s;--pd:0.5s;" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 17-5-5 5-5"/><path d="m15 7 5 5-5 5"/><path d="M12 3v4"/></svg>
-            </span>
-            Secure Code Generation
-          </span>
-          <span class="topic">
-            <span class="topic__ic" style="--ia:ic-bob;--idur:3.8s;--pd:0.9s;" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6M9 11h2"/></svg>
-            </span>
-            AI for Software Engineering
-          </span>
-          <span class="topic">
-            <span class="topic__ic" style="--ia:ic-stack;--idur:3.2s;--pd:1.4s;" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
-            </span>
-            Retrieval-Augmented Generation
-          </span>
-          <span class="topic">
-            <span class="topic__ic" style="--ia:ic-wobble;--idur:4.0s;--pd:1.8s;" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/><path d="M2 13v3M22 13v3"/></svg>
-            </span>
-            AI Agents
-          </span>
-          <span class="topic">
-            <span class="topic__ic" style="--ia:ic-blink;--idur:2.9s;--pd:2.2s;" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/><path d="M8 11h8M8 15h5"/></svg>
-            </span>
-            Natural Language Processing
-          </span>
         </div>
       </div>
     </section>
@@ -1379,6 +1397,26 @@
                 <a class="chip" href="https://www.sciencedirect.com/science/article/pii/S0164121226002979" target="_blank" rel="noopener">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
                   ScienceDirect
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub reveal">
+            <span class="pub__num" aria-hidden="true"></span>
+            <div>
+              <h3 class="pub__title">
+                On the Gap Between Declarative Vulnerability Knowledge and Secure Code Generation in
+                Large Language Models
+              </h3>
+              <p class="pub__venue">
+                Information and Software Technology · 2026
+                <span class="tag">Under review</span>
+              </p>
+              <div class="pub__links">
+                <a class="chip" href="https://doi.org/10.2139/ssrn.7299991" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                  SSRN
                 </a>
               </div>
             </div>
@@ -1484,7 +1522,7 @@
           <div class="cta-row">
             <a class="btn btn--primary" href="mailto:dangvu.cspk53@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
-              Email me
+              dangvu.cspk53@gmail.com
             </a>
             <a class="btn btn--ghost" href="https://www.linkedin.com/in/haidang07092004/" target="_blank" rel="me noopener">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21h-4V9z"/></svg>
@@ -1495,10 +1533,6 @@
               GitHub
             </a>
           </div>
-
-          <p class="contact-panel__addr">
-            <a href="mailto:dangvu.cspk53@gmail.com">dangvu.cspk53@gmail.com</a>
-          </p>
 
           <div class="contact-methods">
             <a class="profile" href="https://scholar.google.com/citations?user=yX8rzu0AAAAJ" target="_blank" rel="me noopener">
