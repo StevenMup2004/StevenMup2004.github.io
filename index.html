@@ -710,6 +710,78 @@
     .card__title { font-size: 17.5px; margin-bottom: 9px; }
     .card__text { font-size: 15px; color: var(--text-2); line-height: 1.65; }
 
+    /* ------------ Topic tiles ------------ */
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 14px;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line-soft);
+    }
+    .topics__label {
+      grid-column: 1 / -1;
+      margin: 0 0 2px;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .topic {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--grad-card);
+      box-shadow: var(--shadow-sm);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+      overflow: hidden;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .topic::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 2px;
+      background: var(--grad-accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
+    }
+    .topic:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: color-mix(in srgb, var(--primary) 38%, transparent);
+    }
+    .topic:hover::after { transform: scaleX(1); }
+
+    .topic__ic {
+      width: 34px; height: 34px;
+      flex: none;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: rgba(var(--primary-rgb), .11);
+      color: var(--primary);
+      transition: background .22s ease, color .22s ease;
+      animation: topic-pulse 4.5s ease-in-out var(--pd, 0s) infinite;
+    }
+    .topic:hover .topic__ic { background: var(--grad-primary); color: #fff; }
+    .topic__ic svg { width: 17px; height: 17px; }
+
+    @keyframes topic-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(var(--primary-rgb), .22); }
+      50%      { box-shadow: 0 0 0 6px rgba(var(--primary-rgb), 0); }
+    }
+
     /* ============================================================
        About
        ============================================================ */
@@ -1174,6 +1246,46 @@
               answer.
             </p>
           </article>
+        </div>
+
+        <div class="topics reveal">
+          <p class="topics__label">Topics</p>
+          <span class="topic">
+            <span class="topic__ic" style="--pd:0.0s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            LLM Security
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--pd:0.5s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 17-5-5 5-5"/><path d="m15 7 5 5-5 5"/><path d="M12 3v4"/></svg>
+            </span>
+            Secure Code Generation
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--pd:0.9s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6M9 11h2"/></svg>
+            </span>
+            AI for Software Engineering
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--pd:1.4s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </span>
+            Retrieval-Augmented Generation
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--pd:1.8s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/><path d="M2 13v3M22 13v3"/></svg>
+            </span>
+            AI Agents
+          </span>
+          <span class="topic">
+            <span class="topic__ic" style="--pd:2.2s;" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/><path d="M8 11h8M8 15h5"/></svg>
+            </span>
+            Natural Language Processing
+          </span>
         </div>
       </div>
     </section>
